@@ -7,7 +7,7 @@ lines.length
 # 2. Return 'Edinburgh Park' from the array
 lines[1]
 # 3. How many ways can we return 'Princes Street' from the array?
-lines[4] lines.at(4) lines[4..4] lines[4, 3]
+lines[4] lines.at(4) lines[4..4] lines[4, 3] lines.last lines.pop
 # 4. Work out the index position of 'Haymarket'
 lines.index("Haymarket")
 # 5. Add 'Airport' to the start of the array
@@ -77,7 +77,7 @@ users["Erik"][:favourite_numbers]
 # 4. Return the type of Avril's pet Colin
 users["Avril"][:pets]["colin"]
 # 5. Return the smallest of Erik's favorite numbers
-users["Erik"][:favourite_numbers][0]
+users["Erik"][:favourite_numbers].min()
 # 6. Add the number `7` to Erik's favorite numbers
 users["Erik"][:favourite_numbers].unshift(7) #p.s wanted it at the start of the array
 # 7. Change Erik's hometown to Edinburgh
